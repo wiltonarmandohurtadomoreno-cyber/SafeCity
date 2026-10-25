@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background: #f4f7f6;
+color: #17202a;
+}
+
+/* =========================
+HEADER
+========================= */
+
+header {
+background: #102a43;
+width: 100%;
+box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+max-width: 1200px;
+margin: auto;
+min-height: 80px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 10px 25px;
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+color: white;
+font-size: 22px;
+font-weight: bold;
+}
+
+.logo img {
+width: 55px;
+height: 55px;
+object-fit: contain;
+}
+
+.menu {
+list-style: none;
+display: flex;
+gap: 8px;
+}
+
+.menu li a {
+text-decoration: none;
+color: white;
+padding: 12px 15px;
+border-radius: 8px;
+font-size: 15px;
+transition: 0.3s;
+}
+
+.menu li a:hover,
+.menu li a.activo {
+background: #20bf6b;
+color: white;
+}
+
+/* =========================
+HERO
+========================= */
+
+.hero {
+min-height: 600px;
+display: flex;
+align-items: center;
+background:
+linear-gradient(rgba(16, 42, 67, 0.82), rgba(16, 42, 67, 0.82)),
+url("../img/medellin.jpg");
+background-size: cover;
+background-position: center;
+}
+
+.hero-contenido {
+max-width: 1200px;
+width: 100%;
+margin: auto;
+padding: 70px 25px;
+color: white;
+}
+
+.etiqueta {
+display: inline-block;
+background: #20bf6b;
+padding: 8px 15px;
+border-radius: 20px;
+font-size: 13px;
+font-weight: bold;
+letter-spacing: 1px;
+margin-bottom: 20px;
+}
+
+.hero h1 {
+font-size: 75px;
+line-height: 0.95;
+margin-bottom: 25px;
+}
+
+.hero h1 span {
+color: #20bf6b;
+}
+
+.hero p {
+max-width: 600px;
+font-size: 19px;
+line-height: 1.7;
+color: #e8f1f5;
+margin-bottom: 35px;
+}
+
+/* =========================
+BOTONES
+========================= */
+
+.botones {
+display: flex;
+gap: 15px;
+flex-wrap: wrap;
+}
+
+.btn,
+.btn-secundario {
+text-decoration: none;
+padding: 15px 25px;
+border-radius: 8px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.btn {
+background: #20bf6b;
+color: white;
+}
+
+.btn:hover {
+background: #169c55;
+transform: translateY(-3px);
+}
+
+.btn-secundario {
+border: 2px solid white;
+color: white;
+}
+
+.btn-secundario:hover {
+background: white;
+color: #102a43;
+transform: translateY(-3px);
+}
+
+/* =========================
+SECCIÓN INFORMACIÓN
+========================= */
+
+.info {
+max-width: 1200px;
+margin: auto;
+padding: 80px 25px;
+text-align: center;
+}
+
+.info h2 {
+font-size: 40px;
+color: #102a43;
+margin-bottom: 15px;
+}
+
+.info > p {
+max-width: 700px;
+margin: auto;
+color: #52616b;
+line-height: 1.7;
+font-size: 17px;
+}
+
+/* =========================
+TARJETAS
+========================= */
+
+.tarjetas {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 25px;
+margin-top: 45px;
+}
+
+.tarjeta {
+background: white;
+padding: 35px 25px;
+border-radius: 15px;
+box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+border-top: 5px solid #20bf6b;
+transition: 0.3s;
+}
+
+.tarjeta:hover {
+transform: translateY(-8px);
+box-shadow: 0 15px 30px rgba(0, 0, 0, 0.14);
+}
+
+.icono {
+width: 70px;
+height: 70px;
+margin: 0 auto 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: #e8f8ef;
+border-radius: 50%;
+font-size: 32px;
+}
+
+.tarjeta h3 {
+color: #102a43;
+font-size: 23px;
+margin-bottom: 12px;
+}
+
+.tarjeta p {
+color: #667781;
+line-height: 1.6;
+}
+
+/* =========================
+FOOTER
+========================= */
+
+footer {
+background: #102a43;
+color: white;
+text-align: center;
+padding: 25px;
+margin-top: 20px;
+}
+
+footer p {
+font-size: 14px;
+}
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+
+.menu {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hero {
+    min-height: 550px;
+}
+
+.hero h1 {
+    font-size: 55px;
+}
+
+.tarjetas {
+    grid-template-columns: 1fr;
+}
+
+
+}
+
+@media (max-width: 600px) {
+
+
+.menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.menu li a {
+    display: block;
+}
+
+.hero h1 {
+    font-size: 45px;
+}
+
+.hero p {
+    font-size: 16px;
+}
+
+.info h2 {
+    font-size: 32px;
+}
+
+}

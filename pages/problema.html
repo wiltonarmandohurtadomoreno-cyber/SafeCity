@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemática | Medellín Segura</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+   <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f4f6f9;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f2a44;
+            color: #fff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            opacity: 0.85;
+        }
+
+        header nav a:hover,
+        header nav a.activo {
+            opacity: 1;
+        }
+
+        main {
+            padding: 50px 8%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background: #e0ecf8;
+            color: #0f2a44;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 750px;
+        }
+
+        .tarjeta {
+            background: #fff;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .tarjeta h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .afectados {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .afectados span {
+            background: #f4f6f9;
+            border: 1px solid #e5e7eb;
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: #0f2a44;
+        }
+
+        .situaciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 20px;
+        }
+
+        .situacion {
+            background: #f4f6f9;
+            border-radius: 12px;
+            padding: 22px;
+            border-top: 4px solid #0f2a44;
+        }
+
+        .situacion .icono {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .situacion p {
+            font-weight: 600;
+        }
+
+        .respuesta {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .respuesta div {
+            background: #ecfdf5;
+            color: #065f46;
+            border-radius: 10px;
+            padding: 18px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .fuente {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+<header>
+    <nav class="navbar">
+        <div class="logo">
+    <img src="../img/logo-removebg-preview.png" alt="Logo Medellín Segura">
+    <span>Medellin Segura</span>
+</div>
+
+        <ul class="menu">
+         <li><a href="../index.html">Inicio</a></li>
+            <li><a href="problema.html" class="activo">Problemática</a></li>
+            <li><a href="estadisticas.html">Estadísticas</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <span class="etiqueta">SEGURIDAD CIUDADANA</span>
+        <h1>La problemática del hurto en Medellín</h1>
+        <p class="intro">
+            Una de las problemáticas relacionadas con la seguridad ciudadana en Medellín
+            es el hurto.
+        </p>
+
+        <!-- A quién afecta -->
+        <section class="tarjeta">
+            <h2>¿A quién puede afectar?</h2>
+            <div class="afectados">
+                <span>Personas</span>
+                <span>Establecimientos comerciales</span>
+                <span>Vehículos</span>
+                <span>Viviendas</span>
+            </div>
+        </section>
+
+        <!-- Situaciones -->
+        <section class="tarjeta">
+            <h2>Situaciones que pueden presentarse</h2>
+            <div class="situaciones">
+                <div class="situacion">
+                    <span class="icono">📱</span>
+                    <p>Hurto de celulares y objetos personales.</p>
+                </div>
+                <div class="situacion">
+                    <span class="icono">🚶</span>
+                    <p>Atracos en espacios públicos.</p>
+                </div>
+                <div class="situacion">
+                    <span class="icono">🏪</span>
+                    <p>Hurto en establecimientos comerciales.</p>
+                </div>
+                <div class="situacion">
+                    <span class="icono">🏍️</span>
+                    <p>Hurto de motocicletas, automóviles y pertenencias en viviendas.</p>
+                </div>
+                <div class="situacion">
+                    <span class="icono">🌙</span>
+                    <p>Percepción de inseguridad en determinados espacios y horarios.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Qué se necesita -->
+        <section class="tarjeta">
+            <h2>¿Qué requiere esta problemática?</h2>
+            <p>
+                La problemática requiere información confiable, prevención, participación
+                ciudadana y atención de las autoridades.
+            </p>
+            <div class="respuesta">
+                <div>Información confiable</div>
+                <div>Prevención</div>
+                <div>Participación ciudadana</div>
+                <div>Atención de las autoridades</div>
+            </div>
+            <p class="fuente">Fuente: Alcaldía de Medellín.</p>
+        </section>
+    </main>
+
+<footer>
+    <p>© 2026 Medellín Segura | Proyecto Productivo Senatic</p>
+</footer>
+
+</body>
+</html>

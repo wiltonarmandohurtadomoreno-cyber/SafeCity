@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones - Seguridad en Medellín</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f4f6f9;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f2a44;
+            color: #fff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            opacity: 0.85;
+        }
+
+        header nav a:hover,
+        header nav a.activo {
+            opacity: 1;
+        }
+
+        main {
+            padding: 50px 8%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background: #e0ecf8;
+            color: #0f2a44;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 750px;
+        }
+
+        .recomendaciones {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .recomendacion {
+            background: #fff;
+            border-radius: 14px;
+            padding: 28px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .recomendacion:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+        }
+
+        .recomendacion .icono {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            font-size: 1.8rem;
+            background: #e0ecf8;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .recomendacion h2 {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+            color: #0f2a44;
+        }
+
+        .recomendacion p {
+            color: #4b5563;
+        }
+
+        .seccion-titulo {
+            font-size: 1.9rem;
+            margin: 70px 0 30px;
+        }
+
+        .bloque-imagen {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            background: #fff;
+            border-radius: 14px;
+            padding: 25px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .bloque-imagen.invertido {
+            flex-direction: row-reverse;
+        }
+
+        .bloque-imagen img {
+            width: 50%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .bloque-imagen .texto h3 {
+            font-size: 1.4rem;
+            color: #0f2a44;
+            margin-bottom: 12px;
+        }
+
+        .bloque-imagen .texto p {
+            color: #4b5563;
+            font-size: 1.05rem;
+        }
+
+        @media (max-width: 750px) {
+            .bloque-imagen,
+            .bloque-imagen.invertido {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .bloque-imagen img {
+                width: 100%;
+                height: 220px;
+            }
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+  
+<header>
+    <nav class="navbar">
+        <div class="logo">
+  <img src="../img/logo-removebg-preview.png" alt="Logo Medellín Segura">
+    <span>Medellin Segura</span>
+</div>
+
+        <ul class="menu">
+         <li><a href="../index.html">Inicio</a></li>
+            <li><a href="problema.html">Problemática</a></li>
+            <li><a href="estadisticas.html">Estadísticas</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="recomendaciones.html" class="activo">Recomendaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+    <main>
+        <span class="etiqueta">PREVENCIÓN</span>
+        <h1>¿Cómo podemos prevenir?</h1>
+        <p class="intro">
+            Adoptar algunos hábitos de prevención puede ayudar a reducir situaciones de
+            riesgo y contribuir a una comunidad más segura.
+        </p>
+
+        <section class="recomendaciones">
+            <article class="recomendacion">
+                <span class="icono">📱</span>
+                <h2>Cuida tus pertenencias</h2>
+                <p>
+                    Evita mostrar objetos de valor en lugares muy concurridos y mantén tus
+                    pertenencias bajo control.
+                </p>
+            </article>
+
+            <article class="recomendacion">
+                <span class="icono">👀</span>
+                <h2>Mantente atento</h2>
+                <p>
+                    Observa tu entorno cuando camines por la ciudad y evita distracciones
+                    excesivas, especialmente en lugares con mucha gente.
+                </p>
+            </article>
+
+            <article class="recomendacion">
+                <span class="icono">🚶</span>
+                <h2>Planea tus recorridos</h2>
+                <p>
+                    Antes de salir, conoce tu ruta y, cuando sea posible, utiliza lugares
+                    transitados y seguros.
+                </p>
+            </article>
+
+            <article class="recomendacion">
+                <span class="icono">📞</span>
+                <h2>Busca ayuda</h2>
+                <p>
+                    Si ocurre una situación de riesgo, busca un lugar seguro y solicita ayuda
+                    a una persona de confianza o a las autoridades.
+                </p>
+            </article>
+
+            <article class="recomendacion">
+                <span class="icono">🤝</span>
+                <h2>Cuida a tu comunidad</h2>
+                <p>
+                    La prevención también depende de la colaboración entre vecinos, familias,
+                    instituciones y autoridades.
+                </p>
+            </article>
+
+            <article class="recomendacion">
+                <span class="icono">🔐</span>
+                <h2>Protege tu información</h2>
+                <p>
+                    Evita compartir información personal con desconocidos y utiliza
+                    contraseñas seguras en tus cuentas.
+                </p>
+            </article>
+        </section>
+
+        <!-- Recomendaciones de seguridad -->
+        <h2 class="seccion-titulo">Recomendaciones de seguridad</h2>
+
+        <section class="bloque-imagen">
+            <img src="../img/pertenencias.jpg" alt="Persona usando su celular en la calle">
+            <div class="texto">
+                <h3>Protege tus objetos personales</h3>
+                <p>
+                    Mantén tus pertenencias bajo control y evita exhibir innecesariamente
+                    objetos de valor en lugares concurridos.
+                </p>
+            </div>
+        </section>
+
+        <section class="bloque-imagen invertido">
+            <img src="../img/recorridos.jpg" alt="Corredor peatonal Carabobo en Medellín">
+            <div class="texto">
+                <h3>Planifica tus recorridos</h3>
+                <p>
+                    Prefiere rutas conocidas y espacios transitados. Presta atención al
+                    entorno al caminar o utilizar el transporte público.
+                </p>
+            </div>
+        </section>
+    </main>
+
+
+<footer>
+    <p>© 2026 Medellín Segura | Proyecto Productivo Senatic |Juan Esteban Gil Y Juan Felipe Molano</p>
+</footer>
+
+</body>
+</html>

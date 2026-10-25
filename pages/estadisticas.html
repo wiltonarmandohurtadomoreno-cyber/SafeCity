@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadísticas - Seguridad en Medellín</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+ <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: #f4f6f9;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #0f2a44;
+            color: #fff;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        header a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        header nav a {
+            margin-left: 20px;
+            opacity: 0.85;
+        }
+
+        header nav a:hover {
+            opacity: 1;
+        }
+
+        main {
+            padding: 50px 8%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .etiqueta {
+            display: inline-block;
+            background: #e0ecf8;
+            color: #0f2a44;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: 2.4rem;
+            margin-bottom: 15px;
+        }
+
+        .intro {
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+            max-width: 750px;
+        }
+
+        .tarjeta {
+            background: #fff;
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+        }
+
+        .tarjeta h2 {
+            font-size: 1.5rem;
+            margin-bottom: 5px;
+        }
+
+        .subtitulo {
+            color: #6b7280;
+            margin-bottom: 20px;
+        }
+
+        .tabla-contenedor {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 450px;
+        }
+
+        th, td {
+            padding: 14px 16px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background: #0f2a44;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        td.numero, th.numero {
+            text-align: right;
+        }
+
+        tbody tr:hover {
+            background: #f9fafb;
+        }
+
+        .baja {
+            color: #15803d;
+            font-weight: 700;
+        }
+
+        .fuente {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 15px;
+        }
+
+        .datos-anuales {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .dato {
+            background: #f4f6f9;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .dato .cifra {
+            display: block;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0f2a44;
+        }
+
+        .dato .descripcion {
+            color: #6b7280;
+        }
+
+        .dato.destacado .cifra {
+            color: #15803d;
+        }
+
+        .nota {
+            border-left: 5px solid #f59e0b;
+            background: #fffbeb;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+    </style>
+  
+<header>
+    <nav class="navbar">
+        <div class="logo">
+<img src="../img/logo-removebg-preview.png" alt="Logo Medellín Segura">
+    <span>Medellin Segura</span>
+</div>
+
+        <ul class="menu">
+         <li><a href="../index.html">Inicio</a></li>
+            <li><a href="problema.html">Problemática</a></li>
+            <li><a href="estadisticas.html"  class="activo">Estadísticas</a></li>
+            <li><a href="mapa.html">Mapa</a></li>
+            <li><a href="recomendaciones.html">Recomendaciones</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+    <main>
+        <span class="etiqueta">CIFRAS OFICIALES</span>
+        <h1>Estadísticas de hurto en Medellín</h1>
+        <p class="intro">
+            La Alcaldía de Medellín publicó cifras comparativas para el periodo comprendido
+            entre el 1 de enero y el 8 de agosto de 2025, frente al mismo periodo de 2024.
+        </p>
+
+        <!-- Comparación por periodo -->
+        <section class="tarjeta">
+            <h2>Comparación de hurtos denunciados</h2>
+            <p class="subtitulo">Medellín · 1 de enero a 8 de agosto</p>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Modalidad</th>
+                            <th class="numero">2024</th>
+                            <th class="numero">2025</th>
+                            <th class="numero">Variación</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Hurto a personas</td>
+                            <td class="numero">10.842</td>
+                            <td class="numero">8.131</td>
+                            <td class="numero baja">−25 %</td>
+                        </tr>
+                        <tr>
+                            <td>Atracos</td>
+                            <td class="numero">6.214</td>
+                            <td class="numero">4.095</td>
+                            <td class="numero baja">−34 %</td>
+                        </tr>
+                        <tr>
+                            <td>Hurto a comercios</td>
+                            <td class="numero">2.401</td>
+                            <td class="numero">1.177</td>
+                            <td class="numero baja">−51 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <p class="fuente">
+                Fuente: Alcaldía de Medellín. Los datos corresponden al periodo indicado,
+                no al año completo.
+            </p>
+        </section>
+
+        <!-- Datos anuales -->
+        <section class="tarjeta">
+            <h2>Datos anuales adicionales</h2>
+            <p class="subtitulo">Hurto a personas · año completo</p>
+
+            <div class="datos-anuales">
+                <div class="dato">
+                    <span class="cifra">25.152</span>
+                    <span class="descripcion">casos en 2024</span>
+                </div>
+                <div class="dato">
+                    <span class="cifra">24.839</span>
+                    <span class="descripcion">casos en 2025</span>
+                </div>
+                <div class="dato destacado">
+                    <span class="cifra">−1,2 %</span>
+                    <span class="descripcion">reducción aproximada</span>
+                </div>
+            </div>
+
+            <p>
+                Según el informe de gestión de la Alcaldía, Medellín registró 24.839 casos
+                de hurto a personas en 2025, frente a 25.152 en 2024. Esto representa una
+                reducción aproximada del 1,2 % entre ambos años.
+            </p>
+
+            <p class="fuente">Fuente: Alcaldía de Medellín, informe de gestión.</p>
+        </section>
+
+        <!-- Nota aclaratoria -->
+        <section class="tarjeta nota">
+            <h2>Es importante distinguir las estadísticas</h2>
+            <p>
+                Las cifras de la primera tabla corresponden solo al periodo del 1 de enero
+                al 8 de agosto, mientras que los datos anuales cubren el año completo. Por
+                eso los porcentajes de variación son diferentes: una reducción fuerte en
+                una parte del año no significa necesariamente la misma reducción en todo
+                el año.
+            </p>
+        </section>
+    </main>
+
+
+            <a href="../index.html" class="btn-regresar">
+                ← Volver al inicio
+            </a>
+
+
+<footer>
+    <p>© 2026 Medellín Segura | Proyecto Productivo Senatic |Juan Esteban Gil Y Juan Felipe Molano</p>
+</footer>
+</body>
+</html>

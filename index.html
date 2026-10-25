@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medellín Segura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="logo">
+    <img src="img/logo-removebg-preview.png" alt="Logo Medellín Segura">
+    <span>Medellin Segura</span>
+</div>
+
+<ul class="menu">
+    <li><a href="index.html" class="activo">Inicio</a></li>
+    <li><a href="pages/problema.html">Problemática</a></li>
+    <li><a href="pages/estadisticas.html">Estadísticas</a></li>
+    <li><a href="pages/mapa.html">Mapa</a></li>
+    <li><a href="pages/recomendaciones.html">Recomendaciones</a></li>
+    <li><a href="pages/contacto.html">Contacto</a></li>
+</ul>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-contenido">
+        <span class="etiqueta">PROYECTO CIUDADANO</span>
+        <h1>SafeCity <br><span>Medellín</span></h1>
+
+        <p>
+            Una plataforma informativa para conocer la problemática
+            de inseguridad en Medellín y promover la prevención ciudadana.
+        </p>
+
+        <div class="botones">
+            <a href="pages/estadisticas.html" class="btn">Ver estadísticas</a>
+            <a href="pages/recomendaciones.html" class="btn-secundario">
+                Recomendaciones
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-imagen">
+        <img src="img/medellin.jpg" alt="Vista panorámica de Medellín en el Valle de Aburrá">
+    </div>
+</section>
+
+<section class="info-medellin">
+    <div class="info-bloque">
+        <h2>Sobre Medellín</h2>
+        <p>
+            Medellín es la capital del departamento de Antioquia, Colombia. Se encuentra
+            en el Valle de Aburrá y es un centro importante de comercio, turismo,
+            educación, tecnología e industria.
+        </p>
+    </div>
+
+    <div class="info-bloque">
+        <h2>¿Por qué es importante la seguridad ciudadana?</h2>
+        <p>
+            La seguridad ciudadana es importante para proteger la vida, la integridad
+            y los bienes de las personas, además de promover una convivencia tranquila
+            en los barrios y espacios públicos.
+        </p>
+    </div>
+</section>
+<style>
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-contenido {
+    flex: 1 1 400px;
+}
+
+.hero-imagen {
+    flex: 1 1 400px;
+}
+
+.hero-imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.info-medellin {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 60px 8%;
+}
+
+.info-bloque h2 {
+    margin-bottom: 12px;
+}
+
+.info-bloque p {
+    line-height: 1.7;
+}
+</style></style>
+
+<section class="info">
+    <h2>Conocer para prevenir</h2>
+    <p>
+        La información puede ayudar a comprender los principales factores
+        relacionados con la inseguridad y fomentar comportamientos preventivos.
+    </p>
+
+    <div class="tarjetas">
+
+        <div class="tarjeta">
+            <div class="icono">🚨</div>
+            <h3>Prevención</h3>
+            <p>
+                Conoce algunas medidas que pueden contribuir a mejorar
+                la seguridad personal y comunitaria.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">📊</div>
+            <h3>Información</h3>
+            <p>
+                Consulta estadísticas y datos generales relacionados
+                con la seguridad de Medellín.
+            </p>
+        </div>
+
+        <div class="tarjeta">
+            <div class="icono">📍</div>
+            <h3>Territorio</h3>
+            <p>
+                Explora información general sobre las diferentes zonas
+                de la ciudad.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Medellín Segura | Proyecto Productivo Senatic</p>
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
